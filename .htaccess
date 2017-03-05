@@ -1,0 +1,19 @@
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^domain\.com [NC]
+	RewriteRule ^(.*)$ http://www.domain.com/$1 [L,R=301]
+        RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+1
+2
+3
+4
+5
+6
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^domain\.com [NC]
+	RewriteRule ^(.*)$ http://www.domain.com/$1 [L,R=301]
+        RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
